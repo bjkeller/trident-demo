@@ -1,0 +1,9 @@
+version: "3.6"
+services:
+  script:
+    build:
+      context: .
+      target: base
+    entrypoint: ["/script/entrypoint.sh"]
+    volumes:
+      - .:/script
