@@ -7,3 +7,4 @@ services:
     entrypoint: ["/script/entrypoint.sh"]
     volumes:
       - .:/script
+    network_mode: "host"
